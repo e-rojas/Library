@@ -133,4 +133,4 @@ jessyReyes.addRating(5);
 jessyReyes.addRating(3);
 jessyReyes.addRating(4.2);
 console.log(jessyReyes.averageRating);
-//console.log(jessyReyes.shuffle());
+console.log(jessyReyes.shuffle());
