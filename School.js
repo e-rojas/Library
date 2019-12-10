@@ -15,7 +15,7 @@ class School {
   }
   get quickFacts() {
     console.log(
-      `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
+      `${this.name} educates ${this.numberOfStudents} students at the ${this._level} school level.`
     );
   }
   set numberOfStudents(numOfStudents) {
@@ -29,7 +29,7 @@ class School {
   }
   static pickSubstituteTeacher(substituteTeachers) {
     const choice = Math.floor(substituteTeachers.length * Math.random());
-    console.log(choice);
+
     return substituteTeachers[choice];
   }
   static numOfStudents() {}

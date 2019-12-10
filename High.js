@@ -1,8 +1,13 @@
 const School = require('./School');
 
-class High extends School {
-  constructor(name, level, numberOfStudents, sportsTeams) {
-    super(name, level, numberOfStudents);
+class HighSchool extends School {
+  constructor(name, numberOfStudents, sportsTeams) {
+    super(name, 'high', numberOfStudents);
     this._sportsTeams = sportsTeams;
   }
+  get sportsTeams() {
+    return this._sportsTeams;
+  }
 }
+
+module.exports = HighSchool;

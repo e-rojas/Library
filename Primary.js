@@ -1,8 +1,13 @@
 const School = require('./School');
 
-class Primary extends School {
-  constructor(name, level, numberOfStudents, pickupPolicy) {
-    super(name, level, numberOfStudents);
+class PrimarySchool extends School {
+  constructor(name, numberOfStudents, pickupPolicy) {
+    super(name, 'primary', numberOfStudents);
     this._pickupPolicy = pickupPolicy;
   }
+  get pickupPolicy() {
+    return this._pickupPolicy;
+  }
 }
+
+module.exports = PrimarySchool;
