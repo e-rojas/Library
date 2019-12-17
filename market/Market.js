@@ -1,5 +1,6 @@
 class Market {
-  constructor(marketName, customerName) {
+  constructor(marketName, customerName, customerID) {
+    this._customerID = customerID;
     this._marketNmae = marketName;
     this._customerName = customerName;
     this._basket = [];
@@ -28,12 +29,13 @@ class Market {
     console.log(this.total);
   }
 }
+module.exports = Market;
 
-const FoodMart = new Market('Food Mart', 'James');
+/* const FoodMart = new Market('Food Mart', 'James');
 FoodMart.addToBasket('Bananas', 4.25);
 FoodMart.addToBasket('Onions', 1.55);
 FoodMart.addToBasket('Tomatos', 2.25);
 FoodMart.addToBasket('Pickels', 5.45);
 FoodMart.total;
 console.log(FoodMart.total);
-FoodMart.numItems;
+FoodMart.numItems; */
